@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F086A13DEA8FA466FA947AF0 /* Pods_SpringAnimationsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A20292052FF08859FE2EE6 /* Pods_SpringAnimationsApp.framework */; };
 		FE5ECD72283BD44600C1D98F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5ECD71283BD44600C1D98F /* AppDelegate.swift */; };
 		FE5ECD74283BD44600C1D98F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5ECD73283BD44600C1D98F /* SceneDelegate.swift */; };
 		FE5ECD76283BD44600C1D98F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5ECD75283BD44600C1D98F /* ViewController.swift */; };
 		FE5ECD79283BD44600C1D98F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE5ECD77283BD44600C1D98F /* Main.storyboard */; };
 		FE5ECD7B283BD44900C1D98F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE5ECD7A283BD44900C1D98F /* Assets.xcassets */; };
 		FE5ECD7E283BD44900C1D98F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE5ECD7C283BD44900C1D98F /* LaunchScreen.storyboard */; };
+		FE5ECD8A283BE35400C1D98F /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5ECD89283BE35400C1D98F /* Models.swift */; };
+		FE5ECD8D283BE98900C1D98F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5ECD8C283BE98900C1D98F /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		838630DFABFE6178E726B88F /* Pods-SpringAnimationsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpringAnimationsApp.release.xcconfig"; path = "Target Support Files/Pods-SpringAnimationsApp/Pods-SpringAnimationsApp.release.xcconfig"; sourceTree = "<group>"; };
+		D5A20292052FF08859FE2EE6 /* Pods_SpringAnimationsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpringAnimationsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D78A88B0D4F7B4CCDE23D8E3 /* Pods-SpringAnimationsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpringAnimationsApp.debug.xcconfig"; path = "Target Support Files/Pods-SpringAnimationsApp/Pods-SpringAnimationsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		FE5ECD6E283BD44600C1D98F /* SpringAnimationsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpringAnimationsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE5ECD71283BD44600C1D98F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE5ECD73283BD44600C1D98F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		FE5ECD7A283BD44900C1D98F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE5ECD7D283BD44900C1D98F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE5ECD7F283BD44900C1D98F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE5ECD89283BE35400C1D98F /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		FE5ECD8C283BE98900C1D98F /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F086A13DEA8FA466FA947AF0 /* Pods_SpringAnimationsApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		087AE25250AA32539D77E92E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5A20292052FF08859FE2EE6 /* Pods_SpringAnimationsApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B580EC57148B48AC718FCF6C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D78A88B0D4F7B4CCDE23D8E3 /* Pods-SpringAnimationsApp.debug.xcconfig */,
+				838630DFABFE6178E726B88F /* Pods-SpringAnimationsApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FE5ECD65283BD44500C1D98F = {
 			isa = PBXGroup;
 			children = (
 				FE5ECD70283BD44600C1D98F /* SpringAnimationsApp */,
 				FE5ECD6F283BD44600C1D98F /* Products */,
+				B580EC57148B48AC718FCF6C /* Pods */,
+				087AE25250AA32539D77E92E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +84,65 @@
 		FE5ECD70283BD44600C1D98F /* SpringAnimationsApp */ = {
 			isa = PBXGroup;
 			children = (
-				FE5ECD71283BD44600C1D98F /* AppDelegate.swift */,
-				FE5ECD73283BD44600C1D98F /* SceneDelegate.swift */,
-				FE5ECD75283BD44600C1D98F /* ViewController.swift */,
-				FE5ECD77283BD44600C1D98F /* Main.storyboard */,
-				FE5ECD7A283BD44900C1D98F /* Assets.xcassets */,
-				FE5ECD7C283BD44900C1D98F /* LaunchScreen.storyboard */,
+				FE5ECD85283BDEF400C1D98F /* App */,
+				FE5ECD86283BDF0400C1D98F /* ViewControllers */,
+				FE5ECD87283BDF1600C1D98F /* Storyboards */,
+				FE5ECD88283BDF2100C1D98F /* Assets */,
 				FE5ECD7F283BD44900C1D98F /* Info.plist */,
+				FE5ECD8B283BE35B00C1D98F /* Models */,
+				FE5ECD8E283BE98F00C1D98F /* Service */,
 			);
 			path = SpringAnimationsApp;
+			sourceTree = "<group>";
+		};
+		FE5ECD85283BDEF400C1D98F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FE5ECD71283BD44600C1D98F /* AppDelegate.swift */,
+				FE5ECD73283BD44600C1D98F /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FE5ECD86283BDF0400C1D98F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FE5ECD75283BD44600C1D98F /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FE5ECD87283BDF1600C1D98F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FE5ECD77283BD44600C1D98F /* Main.storyboard */,
+				FE5ECD7C283BD44900C1D98F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FE5ECD88283BDF2100C1D98F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FE5ECD7A283BD44900C1D98F /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		FE5ECD8B283BE35B00C1D98F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FE5ECD89283BE35400C1D98F /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FE5ECD8E283BE98F00C1D98F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FE5ECD8C283BE98900C1D98F /* DataManager.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +152,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE5ECD82283BD44900C1D98F /* Build configuration list for PBXNativeTarget "SpringAnimationsApp" */;
 			buildPhases = (
+				35D19AC0A8EC2DC5489C1BCA /* [CP] Check Pods Manifest.lock */,
 				FE5ECD6A283BD44600C1D98F /* Sources */,
 				FE5ECD6B283BD44600C1D98F /* Frameworks */,
 				FE5ECD6C283BD44600C1D98F /* Resources */,
+				C667E2A2320C3040F550C72E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +213,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		35D19AC0A8EC2DC5489C1BCA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpringAnimationsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C667E2A2320C3040F550C72E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpringAnimationsApp/Pods-SpringAnimationsApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpringAnimationsApp/Pods-SpringAnimationsApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpringAnimationsApp/Pods-SpringAnimationsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FE5ECD6A283BD44600C1D98F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FE5ECD76283BD44600C1D98F /* ViewController.swift in Sources */,
+				FE5ECD8D283BE98900C1D98F /* DataManager.swift in Sources */,
 				FE5ECD72283BD44600C1D98F /* AppDelegate.swift in Sources */,
 				FE5ECD74283BD44600C1D98F /* SceneDelegate.swift in Sources */,
+				FE5ECD8A283BE35400C1D98F /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +408,7 @@
 		};
 		FE5ECD83283BD44900C1D98F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D78A88B0D4F7B4CCDE23D8E3 /* Pods-SpringAnimationsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,6 +422,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,12 +432,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		FE5ECD84283BD44900C1D98F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 838630DFABFE6178E726B88F /* Pods-SpringAnimationsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,6 +452,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +462,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
